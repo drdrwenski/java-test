@@ -28,12 +28,13 @@ public class WoerterRaten {
 
 		for (int i=0; i<wort.length(); i++) {
 			if (tipp.charAt(i) == wort.charAt(i)) {
-				System.out.println(i+". Buchstabe richtig!");
 				treffer++;
+				System.out.print(tipp.charAt(i));
 			} else {
-				System.out.println(i+". Buchstabe falsch!");
+				System.out.print("*");
 			}
 		}
+		System.out.println();
 		System.out.println("Treffer: " + treffer);
 	}
 
