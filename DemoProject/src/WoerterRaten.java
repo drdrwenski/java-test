@@ -23,14 +23,18 @@ public class WoerterRaten {
 		Scanner eingabe = new Scanner(System.in);
 		System.out.println("Dein Tipp:");
 		String tipp = eingabe.next();
+		
+		int treffer = 0;
 
 		for (int i=0; i<wort.length(); i++) {
 			if (tipp.charAt(i) == wort.charAt(i)) {
 				System.out.println(i+". Buchstabe richtig!");
+				treffer++;
 			} else {
 				System.out.println(i+". Buchstabe falsch!");
 			}
 		}
+		System.out.println("Treffer: " + treffer);
 	}
 
 }
